@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Twitter</title>
+	<link rel="stylesheet" href="Assets/Css/main.css">
+</head>
+<body>
+	<!-- sección header -->
+	<header>
+		<div id="cabecera">
+			<h1>Twitter</h1>
+		</div>
+	</header>
+	<!-- sección de fondo, textarea, botón y contenedor mensajes -->
+	<section class="container">
+			<div class="container-left">
+				<h2>Reto de Código</h2>
+				<br>
+				<h3>Hola, <br> soy front - end developer jr.</h3>
+				<br>
+				<hr>
+				<br>
+				<a style="text-decoration: none" href="#">Código</a>
+			</div>
+
+			<div class="container-right">
+				<textarea name="txt" id="comment" cols="60" rows="10" placeholder="¿Qué está pasando?" onkeypress="contar()"></textarea>
+				<br>
+				<button type="button" id="btn" onclick="add()">TWEET</button>
+				<input disabled size="1" value="140" id="contador">
+			</div>
+	</section>
+	<!-- contenedor comentarios -->
+	<section>
+			<div id="cont"></div>
+	</section>
+
+	<!-- script files-->
+	<script type="text/javascript" src="Assets/Js/javascript.js"></script>		
+</body>
+</html>
